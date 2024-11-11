@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <title>
+Alert с размером
+    </title>
+</head>
+
+<body style="text-align: center;">
+    <h1 style="color:green;">
+        Размер экрана
+    </h1>
+
+    <h3>
+        Этот экран имеет размеры
+    </h3>
+
+    <button onclick="alert( screen.width + 'x' + screen.height );">
+        Узнать
+    </button>
+
+    <p id="GFG"></p>
+
+    <script>
+        let elm = document.getElementById("GFG");
+
+        function GFG_Fun() {
+            let width = window.innerWidth;
+            elm.innerHTML = width + " pixels";
+        }
+    </script>
+</body>
+
+</html>
